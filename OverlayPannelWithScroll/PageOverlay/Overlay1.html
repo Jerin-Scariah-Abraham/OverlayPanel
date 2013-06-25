@@ -1,0 +1,120 @@
+<html>
+	<head>
+
+		<style>
+			#loadPage {
+				width: 400px;
+				height: 600px;
+				border: 1px solid #000;
+				border-right: none;
+				background: rgba(0,0,0,.5);
+				margin: -1px 0;
+				right: 0 !important;
+				left: auto !important;
+				float: right;
+				z-index: 2000;
+				position: absolute;
+				top: 10;
+			}
+			
+			#body{
+				width: 1520px;
+				height: 800px;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-1.7.1.js"></script>
+
+		<script type="text/javascript">
+			function overlayPage() {
+
+				$("body").append('<div class="overlay" id="loadPage" style="overflow:scroll;"></div>');
+			}
+
+			function onPannel() {
+
+				$('#loadPage').load('Overlay1.html', function() {
+					alert('Load was performed.');
+				});
+
+			}
+
+		</script>
+	</head>
+	<body>
+
+		<input type="button" value="Pannel" onclick="overlayPage();">
+		</input>
+
+		<input type="button" value="LoadHTML" onclick="onPannel();">
+		</input>
+
+		</p>
+		
+			<h2 style="margin-top:5px;color:#789">External page loaded with AJAX</h2>
+			<p>
+				<strong>Consectetur adipiscing elit. Nunc gravida faucibus
+				lectus. Suspendisse varius dapibus tellus. Morbi sit amet turpis a
+				leo congue auctor.</strong>
+			</p>
+
+			<img src="Capture.PNG" />
+			<p>
+				Mauris odio lacus, feugiat eget, condimentum eu, pretium sit amet,
+				pede. Suspendisse vitae nunc. Nullam viverra, ligula ut porttitor
+				placerat, est metus accumsan libero, sit amet tristique libero dui
+				id mauris. Praesent id turpis. Praesent quis diam sed eros pulvinar
+				tincidunt.
+			</p>
+			<img src="favicon.png" />
+			<p>
+				Morbi ut felis. In venenatis lacus et justo. Sed turpis velit,
+				malesuada sed, sodales vel, volutpat et, nisi. Sed vitae nisl. Fusce
+				scelerisque dui quis pede. Donec luctus arcu eget metus. Aenean at
+				odio. Nullam ullamcorper mauris sit amet ante.
+			</p>
+			<img src="favicon.png" />
+			<p>
+				Donec sem purus, vulputate pharetra, cursus quis, fringilla ut,
+				mi. Duis varius porta eros. Suspendisse faucibus, nibh at tempor
+				viverra, mi eros lacinia enim, at sodales dui massa ut nibh. In hac
+				habitasse platea dictumst. Aenean libero. Duis hendrerit leo
+				tincidunt felis. Cras lacus. Suspendisse venenatis sapien accumsan
+				orci. Suspendisse condimentum quam mattis elit. Praesent porttitor
+				magna at ligula. Nunc a dui.
+			</p>
+			<img src="favicon.png" />
+			<p>
+				Ut commodo. Aliquam quis nisi. Nulla sodales felis. Sed nibh odio,
+				fermentum a, tristique vel, tincidunt ut, nunc. Pellentesque in
+				velit. Aenean bibendum sollicitudin velit. Suspendisse
+				venenatis. Nunc et felis. Suspendisse aliquet faucibus
+				felis. Maecenas nec tellus. Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit. Praesent feugiat pretium augue. Cras interdum
+				interdum nisi.
+			</p>
+			<img src="Capture.PNG" />
+			<p>
+				Curabitur lacus mauris, laoreet in, ornare nec, laoreet vel,
+				libero. Aliquam interdum tristique est. Nunc faucibus magna in
+				urna. Donec ut quam gravida justo congue adipiscing. Maecenas
+				purus. Donec nulla eros, dapibus et, aliquet a, scelerisque id,
+				nulla. Donec tempus, leo a ultricies vestibulum, massa sem aliquet
+				nunc, non rutrum elit augue quis felis. Duis interdum. Vestibulum
+				pulvinar facilisis enim. Donec tincidunt libero at mi. Ut
+				sollicitudin, nulla non vulputate cursus, diam purus suscipit metus,
+				in fermentum purus purus at orci. Morbi iaculis lorem eget
+				dolor. Praesent tristique sagittis massa. Duis lacinia, augue vitae
+				tincidunt varius, lacus lorem fringilla nunc, sed varius orci augue
+				a mi. Quisque nec nibh.
+			</p>
+			<img src="favicon.png" />
+
+		<script>
+			$("#loadPage").scroll(function move() {
+
+				$("body").scrollTop($("#loadPage").scrollTop());
+				$("#loadPage").css("top",$("#loadPage").scrollTop());
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+	<head>
+
+		<style>
+			.overlay {
+				width: 400px;
+				height: 780px;
+				border: 1px solid #000;
+				border-right: none;
+				background: rgba(0,0,0,.5);
+				margin: -1px 0;
+				right: 0 !important;
+				left: auto !important;
+				float: right;
+				z-index: 2000;
+				position: absolute;
+				top: 10;
+			}
+			
+				.overlayHide {
+				width: 400px;
+				height: 780px;
+				border: 0px solid #000;
+				border-right: none;
+				background: rgba(0,0,0,0);
+				margin: -1px 0;
+				right: 0 !important;
+				left: auto !important;
+				float: right;
+				z-index: 2000;
+				position: absolute;
+				top: 10;
+			}
+			
+			#body{
+				width: 1520px;
+				height: 750px;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="js/overlay.js"></script>
+	</head>
+	<body>
+
+		<input type="button" value="Pannel" onclick="overlayPage();">
+		</input>
+
+		<input type="button" value="LoadHTML" onclick="onPannel();">
+		</input>
+
+		
+		
+			<h2 style="margin-top:5px;color:#789">External page loaded with AJAX</h2>
+			
+
+			<img src="Capture.PNG" />
+			<br/>
+			<img src="favicon.jpg" />
+			<br/>
+			<img src="Capture.PNG" />
+			<br/>
+			<img src="favicon.jpg" />
+			<br/>
+			
+			<img src="favicon.jpg" />
+			<br/>
+			<img src="favicon.jpg" />
+			<br/>
+			<img src="Capture.PNG" />
+			<br/>
+			<img src="favicon.jpg" />
+
+
+	</body>
+</html>
