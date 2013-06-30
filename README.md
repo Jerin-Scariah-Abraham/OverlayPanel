@@ -1,10 +1,15 @@
 OverlayPanel
 ============
+
+Page Overlay by Creates Page Overlay. Loads The given page to the content pannel is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+Based on a work at https://github.com/Jerin-Scariah-Abraham/OverlayPanel.git.
+
 The solution to the need of overlay Panel. It shows you the page you are in, and can navigate with the help of the panel.
 
 	1) Creates an Overlay Panel on the page.
 	2) loads the page on the Pannel to give the overall View.
 	3) Navigate on the mail page, by navigating on the panel.
+	4) Screen Shots can be taken using ( htms2Canvas.js / MIT lisence)
 
 There are Two Versions of the Project:
 ======================================
