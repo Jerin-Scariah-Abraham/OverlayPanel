@@ -18,7 +18,7 @@ There are Two Versions of the Project:
 	
 How to use:
 ===========
-You can use the HTML/js pages as it is or you can make modify the Code to adapt your requirement.
+You can use the HTML/js pages as it is or you can modify the Code to adapt your requirement.
 
 
 
